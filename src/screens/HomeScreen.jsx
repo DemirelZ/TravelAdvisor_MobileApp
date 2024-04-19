@@ -1,5 +1,13 @@
-import {Image, SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {
+  Image,
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import React from 'react';
+import * as Animatable from 'react-native-animatable';
 
 const HomeScreen = () => {
   return (
@@ -26,10 +34,24 @@ const HomeScreen = () => {
       <View className="w-[400px] h-[400px] bg-[#E99265] rounded-full absolute -bottom-28 -left-36"></View>
 
       <View className="flex-1 relative items-center justify-center">
-        <Image
+        <Animatable.Image
+          animation={'fadeIn'}
+          easing={'ease-in-out'}
           source={require('../assets/hero.png')}
           className="w-full h-full object-cover mt-20"
         />
+
+        <View className="absolute bottom-20 w-24 h-24 rounded-full border-[#00BCC9] border-l-2 border-t-4 border-r-2 items-center justify-center">
+          <TouchableOpacity>
+            <Animatable.View
+              animation={'pulse'}
+              easing={'ease-in-out'}
+              iterationCount={'infinite'}
+              className=" w-20 h-20 rounded-full bg-[#00BCC9] justify-center items-center">
+              <Text className="text-gray-50 font-bold text-3xl">Go</Text>
+            </Animatable.View>
+          </TouchableOpacity>
+        </View>
       </View>
     </SafeAreaView>
   );
