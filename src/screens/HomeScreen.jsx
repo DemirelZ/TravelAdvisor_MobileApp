@@ -8,8 +8,9 @@ import {
 } from 'react-native';
 import React from 'react';
 import * as Animatable from 'react-native-animatable';
+import {DISCOVER} from '../utils/routes';
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
   return (
     <SafeAreaView className="bg-white flex-1 relative">
       <View className="flex-row px-6 mt-8 items-center space-x-2">
@@ -42,7 +43,7 @@ const HomeScreen = () => {
         />
 
         <View className="absolute bottom-20 w-24 h-24 rounded-full border-[#00BCC9] border-l-2 border-t-4 border-r-2 items-center justify-center">
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate(DISCOVER)}>
             <Animatable.View
               animation={'pulse'}
               easing={'ease-in-out'}
