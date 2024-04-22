@@ -31,7 +31,7 @@ const HomeScreen = ({navigation}) => {
         </Text>
       </View>
 
-      <View className="w-[400px] h-[400px] bg-[#00BCC9] rounded-full absolute bottom-36 -right-36"></View>
+      <View className="w-[350px] h-[350px] bg-[#00BCC9] rounded-full absolute bottom-36 -right-36"></View>
       <View className="w-[400px] h-[400px] bg-[#E99265] rounded-full absolute -bottom-28 -left-36"></View>
 
       <View className="flex-1 relative items-center justify-center">
