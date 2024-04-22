@@ -1,6 +1,6 @@
 # Travel Advisor App React-Native
 
-This project is a travle advisor application developed using React Native.
+This project is a travel advisor application developed using React Native.
 <br/>
 <br/> This application provides information about some restaurants, attractions and hotels in Türkiye
 <br/>
